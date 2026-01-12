@@ -3,4 +3,6 @@ import express from "express";
 const app = express();
 const PORT = ENV.PORT || 5001;
 
-if (ENV.NODE_ENV === "production") job.start();
+app.listen(PORT, () => {
+  console.log("Server is running on PORT:", PORT);
+});
