@@ -32,9 +32,13 @@ app.post("/api/favorites", async (req, res) => {
       .returning();
 
        res.status(201).json(newFavorite[0]);
+     } catch (error) {
+    console.log("Error adding favorite", error);
+    res.status(500).json({ error: "Something went wrong" });
+  }
+});
+
    
-
-
 app.listen(PORT, () => {
   console.log("Server is running on PORT:", PORT);
 });
