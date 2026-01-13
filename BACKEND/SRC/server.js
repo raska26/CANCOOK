@@ -30,6 +30,8 @@ app.post("/api/favorites", async (req, res) => {
         servings,
       })
       .returning();
+
+       res.status(201).json(newFavorite[0]);
    
 
 
