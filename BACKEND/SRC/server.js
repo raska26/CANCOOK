@@ -8,6 +8,8 @@ app.get("/api/health", (req, res) => {
   res.status(200).json({ success: true });
 });
 
+app.post("/api/favorites", async (req, res) => {
+
 app.listen(PORT, () => {
   console.log("Server is running on PORT:", PORT);
 });
