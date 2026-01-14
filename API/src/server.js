@@ -41,7 +41,15 @@ app.post("/api/favorites", async (req, res) => {
   }
 });
 
-app.delete("/api/favorites/:userId/:recipeId", async (req, res) =>
+app.delete("/api/favorites/:userId/:recipeId", async (req, res) => {
+  try {
+    const { userId, recipeId } = req.params;
+
+    await db
+      .delete(favoritesTable)
+      .where(
+        and(eq(favoritesTable.userId, userId), eq(favoritesTable.recipeId, parseInt(recipeId)))
+      );
 
    
 app.listen(PORT, () => {
