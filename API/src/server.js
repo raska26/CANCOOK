@@ -41,6 +41,8 @@ app.post("/api/favorites", async (req, res) => {
   }
 });
 
+app.delete("/api/favorites/:userId/:recipeId", async (req, res) =>
+
    
 app.listen(PORT, () => {
   console.log("Server is running on PORT:", PORT);
