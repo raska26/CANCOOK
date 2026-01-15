@@ -162,3 +162,14 @@ const loadData = async () => {
           <View style={homeStyles.sectionHeader}>
             <Text style={homeStyles.sectionTitle}>{selectedCategory}</Text>
           </View>
+
+             {recipes.length > 0 ? (
+            <FlatList
+              data={recipes}
+              renderItem={({ item }) => <RecipeCard recipe={item} />}
+              keyExtractor={(item) => item.id.toString()}
+              numColumns={2}
+              columnWrapperStyle={homeStyles.row}
+              contentContainerStyle={homeStyles.recipesGrid}
+              scrollEnabled={false}
+         
