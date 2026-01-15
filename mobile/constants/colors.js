@@ -55,17 +55,17 @@ const sunsetTheme = {
   shadow: "#000000",
 };
 
-
-export const THEMES = {
-  coffee: coffeeTheme,
-  forest: forestTheme,
-  purple: purpleTheme,
-  ocean: oceanTheme,
-  sunset: sunsetTheme,
-  mint: mintTheme,
-  midnight: midnightTheme,
-  roseGold: roseGoldTheme,
+const mintTheme = {
+  primary: "#00B5B5",
+  background: "#E8F6F6",
+  text: "#006666",
+  border: "#B2E8E8",
+  white: "#FFFFFF",
+  textLight: "#66D9D9",
+  card: "#FFFFFF",
+  shadow: "#000000",
 };
+
 
 
 export const COLORS = THEMES.purple;
