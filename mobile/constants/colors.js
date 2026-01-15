@@ -66,6 +66,27 @@ const mintTheme = {
   shadow: "#000000",
 };
 
+const midnightTheme = {
+  primary: "#2C3E50",
+  background: "#F4F6F7",
+  text: "#1A2530",
+  border: "#D5D8DC",
+  white: "#FFFFFF",
+  textLight: "#7F8C8D",
+  card: "#FFFFFF",
+  shadow: "#000000",
+};
+
+const roseGoldTheme = {
+  primary: "#E0BFB8",
+  background: "#FDF6F5",
+  text: "#4A3B38",
+  border: "#F2D9D5",
+  white: "#FFFFFF",
+  textLight: "#C9A9A6",
+  card: "#FFFFFF",
+  shadow: "#000000",
+};
 
 
 export const COLORS = THEMES.purple;
