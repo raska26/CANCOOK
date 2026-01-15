@@ -3,9 +3,14 @@ import React from 'react'
 
 const SignInScreen = () => {
   const router = useRouter();
+  const { signIn, setActive, isLoaded } = useSignIn();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-export default function sign-in() {
-  return (
+
+    return (
     <View>
       <Text>sign-in</Text>
     </View>
