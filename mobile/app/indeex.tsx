@@ -98,4 +98,6 @@ const loadData = async () => {
             onRefresh={onRefresh}
             tintColor={COLORS.primary}
           />
-        }
+        }   
+        contentContainerStyle={homeStyles.scrollContent}
+      >
