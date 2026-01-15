@@ -116,3 +116,13 @@ const loadData = async () => {
                   style={homeStyles.featuredImage}
                   contentFit="cover"
                   transition={500}
+                   />
+                <View style={homeStyles.featuredOverlay}>
+                  <View style={homeStyles.featuredBadge}>
+                    <Text style={homeStyles.featuredBadgeText}>Featured</Text>
+                  </View>
+
+                  <View style={homeStyles.featuredContent}>
+                    <Text style={homeStyles.featuredTitle} numberOfLines={2}>
+                      {featuredRecipe.title}
+                    </Text>
