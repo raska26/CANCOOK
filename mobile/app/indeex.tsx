@@ -126,3 +126,13 @@ const loadData = async () => {
                     <Text style={homeStyles.featuredTitle} numberOfLines={2}>
                       {featuredRecipe.title}
                     </Text>
+
+ <View style={homeStyles.featuredMeta}>
+                      <View style={homeStyles.metaItem}>
+                        <Ionicons name="time-outline" size={16} color={COLORS.white} />
+                        <Text style={homeStyles.metaText}>{featuredRecipe.cookTime}</Text>
+                      </View>
+                      <View style={homeStyles.metaItem}>
+                        <Ionicons name="people-outline" size={16} color={COLORS.white} />
+                        <Text style={homeStyles.metaText}>{featuredRecipe.servings}</Text>
+                      </View>
