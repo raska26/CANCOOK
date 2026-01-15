@@ -81,3 +81,9 @@ const loadData = async () => {
     await loadData();
     setRefreshing(false);
   };onRefresh 
+
+   useEffect(() => {
+    loadData();
+  }, []);
+
+  if (loading && !refreshing) return <LoadingSpinner message="Loading delicions recipes..." />;
