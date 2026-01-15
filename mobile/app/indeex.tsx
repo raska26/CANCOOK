@@ -47,4 +47,12 @@ const loadData = async () => {
         .filter((meal) => meal !== null);
 
               setRecipes(transformedMeals);
-              
+
+                  const transformedFeatured = MealAPI.transformMealData(featuredMeal);
+      setFeaturedRecipe(transformedFeatured);
+    } catch (error) {
+      console.log("Error loading the data", error);
+    } finally {
+      setLoading(false);
+    }
+  };
