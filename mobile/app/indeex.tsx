@@ -101,3 +101,12 @@ const loadData = async () => {
         }   
         contentContainerStyle={homeStyles.scrollContent}
       >
+
+          {/* FEATURED SECTION */}
+        {featuredRecipe && (
+          <View style={homeStyles.featuredSection}>
+            <TouchableOpacity
+              style={homeStyles.featuredCard}
+              activeOpacity={0.9}
+              onPress={() => router.push(`/recipe/${featuredRecipe.id}`)}
+            ></TouchableOpacity>
