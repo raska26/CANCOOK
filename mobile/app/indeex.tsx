@@ -56,3 +56,16 @@ const loadData = async () => {
       setLoading(false);
     }
   };
+
+  const loadCategoryData = async (category) => {
+    try {
+      const meals = await MealAPI.filterByCategory(category);
+      const transformedMeals = meals
+        .map((meal) => MealAPI.transformMealData(meal))
+        .filter((meal) => meal !== null);
+      setRecipes(transformedMeals);
+    } catch (error) {
+      console.error("Error loading category data:", error);
+      setRecipes([]);
+    }
+  };
