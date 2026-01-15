@@ -37,3 +37,5 @@ const loadData = async () => {
         image: cat.strCategoryThumb,
         description: cat.strCategoryDescription,
       }));
+
+          setCategories(transformedCategories);
