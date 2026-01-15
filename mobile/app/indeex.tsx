@@ -87,3 +87,15 @@ const loadData = async () => {
   }, []);
 
   if (loading && !refreshing) return <LoadingSpinner message="Loading delicions recipes..." />;
+
+    return (
+    <View style={homeStyles.container}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+            tintColor={COLORS.primary}
+          />
+        }
