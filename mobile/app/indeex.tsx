@@ -41,3 +41,10 @@ const loadData = async () => {
           setCategories(transformedCategories);
 
            if (!selectedCategory) setSelectedCategory(transformedCategories[0].name);
+
+           const transformedMeals = randomMeals
+        .map((meal) => MealAPI.transformMealData(meal))
+        .filter((meal) => meal !== null);
+
+              setRecipes(transformedMeals);
+              
