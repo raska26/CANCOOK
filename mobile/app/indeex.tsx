@@ -172,4 +172,19 @@ const loadData = async () => {
               columnWrapperStyle={homeStyles.row}
               contentContainerStyle={homeStyles.recipesGrid}
               scrollEnabled={false}
+
+                />
+          ) : (
+            <View style={homeStyles.emptyState}>
+              <Ionicons name="restaurant-outline" size={64} color={COLORS.textLight} />
+              <Text style={homeStyles.emptyTitle}>No recipes found</Text>
+              <Text style={homeStyles.emptyDescription}>Try a different category</Text>
+            </View>
+          )}
+        </View>
+      </ScrollView>
+    </View>
+  );
+};
+export default HomeScreen;
          
