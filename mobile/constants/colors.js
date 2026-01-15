@@ -33,30 +33,5 @@ const purpleTheme = {
   shadow: "#000000",
 };
 
-const oceanTheme = {
-  primary: "#0277BD",
-  background: "#E1F5FE",
-  text: "#01579B",
-  border: "#B3E5FC",
-  white: "#FFFFFF",
-  textLight: "#4FC3F7",
-  card: "#FFFFFF",
-  shadow: "#000000",
-};
-
-const sunsetTheme = {
-  primary: "#FF7E67",
-  background: "#FFF3F0",
-  text: "#2C1810",
-  border: "#FFD5CC",
-  white: "#FFFFFF",
-  textLight: "#FFA494",
-  card: "#FFFFFF",
-  shadow: "#000000",
-};
-
-
-
-// 
 
 export const COLORS = THEMES.purple;
