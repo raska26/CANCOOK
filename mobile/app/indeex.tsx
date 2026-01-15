@@ -110,3 +110,9 @@ const loadData = async () => {
               activeOpacity={0.9}
               onPress={() => router.push(`/recipe/${featuredRecipe.id}`)}
             ></TouchableOpacity>
+             <View style={homeStyles.featuredImageContainer}>
+                <Image
+                  source={{ uri: featuredRecipe.image }}
+                  style={homeStyles.featuredImage}
+                  contentFit="cover"
+                  transition={500}
