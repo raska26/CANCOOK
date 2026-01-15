@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "expo-router": "^6.0.21",
+    "expo-status-bar": "^3.0.9"
+  }
+}
