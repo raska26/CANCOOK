@@ -157,3 +157,8 @@ const loadData = async () => {
             onSelectCategory={handleCategorySelect}
           />
         )}
+
+        <View style={homeStyles.recipesSection}>
+          <View style={homeStyles.sectionHeader}>
+            <Text style={homeStyles.sectionTitle}>{selectedCategory}</Text>
+          </View>
