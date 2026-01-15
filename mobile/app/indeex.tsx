@@ -80,4 +80,4 @@ const loadData = async () => {
     // await sleep(2000);
     await loadData();
     setRefreshing(false);
-  };
+  };onRefresh 

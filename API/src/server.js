@@ -7,7 +7,7 @@ import job from "./config/cron.js";
 
 
 
-const app = express();
+const app = express();npx
 const PORT = ENV.PORT || 5001;
 
 app.use(express.json());
