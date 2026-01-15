@@ -136,3 +136,16 @@ const loadData = async () => {
                         <Ionicons name="people-outline" size={16} color={COLORS.white} />
                         <Text style={homeStyles.metaText}>{featuredRecipe.servings}</Text>
                       </View>
+                          {featuredRecipe.area && (
+                        <View style={homeStyles.metaItem}>
+                          <Ionicons name="location-outline" size={16} color={COLORS.white} />
+                          <Text style={homeStyles.metaText}>{featuredRecipe.area}</Text>
+                        </View>
+                      )}
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </TouchableOpacity>
+          </View>
+        )}
