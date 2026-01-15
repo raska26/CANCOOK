@@ -149,3 +149,11 @@ const loadData = async () => {
             </TouchableOpacity>
           </View>
         )}
+
+         {categories.length > 0 && (
+          <CategoryFilter
+            categories={categories}
+            selectedCategory={selectedCategory}
+            onSelectCategory={handleCategorySelect}
+          />
+        )}
