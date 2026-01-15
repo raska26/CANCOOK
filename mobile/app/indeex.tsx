@@ -31,3 +31,9 @@ const loadData = async () => {
         MealAPI.getRandomMeal(),
        
       ]);
+         const transformedCategories = apiCategories.map((cat, index) => ({
+        id: index + 1,
+        name: cat.strCategory,
+        image: cat.strCategoryThumb,
+        description: cat.strCategoryDescription,
+      }));
