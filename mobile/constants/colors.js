@@ -89,4 +89,15 @@ const roseGoldTheme = {
 };
 
 
+export const THEMES = {
+  coffee: coffeeTheme,
+  forest: forestTheme,
+  purple: purpleTheme,
+  ocean: oceanTheme,
+  sunset: sunsetTheme,
+  mint: mintTheme,
+  midnight: midnightTheme,
+  roseGold: roseGoldTheme,
+};
+
 export const COLORS = THEMES.purple;
