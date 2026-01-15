@@ -21,3 +21,6 @@ const HomeScreen = () => {
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
 
+const loadData = async () => {
+    try {
+      setLoading(true);
