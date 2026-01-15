@@ -26,5 +26,8 @@ const loadData = async () => {
       setLoading(true);
 
        const [apiCategories, randomMeals, featuredMeal] = await Promise.all([
+        MealAPI.getCategories(),
+        MealAPI.getRandomMeals(12),
+        MealAPI.getRandomMeal(),
        
       ]);
