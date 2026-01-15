@@ -74,3 +74,10 @@ const loadData = async () => {
     setSelectedCategory(category);
     await loadCategoryData(category);
   };
+
+  const onRefresh = async () => {
+    setRefreshing(true);
+    // await sleep(2000);
+    await loadData();
+    setRefreshing(false);
+  };
