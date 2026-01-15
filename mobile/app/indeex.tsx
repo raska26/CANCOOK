@@ -7,4 +7,13 @@ import { Image } from "expo-image";
 import { COLORS } from "../../constants/colors";
 import { Ionicons } from "@expo/vector-icons";
 import CategoryFilter from "../../components/CategoryFilter";
-const sleep = (ms) => new Promise(...)
+import RecipeCard from "../../components/RecipeCard";
+import LoadingSpinner from "../../components/LoadingSpinner";
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const HomeScreen = () => {
+  const router = useRouter();
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [recipes, setRecipes] = useState([]);
+  const [categories, setCategories] = useState([]);
