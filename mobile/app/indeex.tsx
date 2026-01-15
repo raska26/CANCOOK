@@ -69,3 +69,8 @@ const loadData = async () => {
       setRecipes([]);
     }
   };
+
+  const handleCategorySelect = async (category) => {
+    setSelectedCategory(category);
+    await loadCategoryData(category);
+  };
