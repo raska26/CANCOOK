@@ -44,5 +44,28 @@ const oceanTheme = {
   shadow: "#000000",
 };
 
+const sunsetTheme = {
+  primary: "#FF7E67",
+  background: "#FFF3F0",
+  text: "#2C1810",
+  border: "#FFD5CC",
+  white: "#FFFFFF",
+  textLight: "#FFA494",
+  card: "#FFFFFF",
+  shadow: "#000000",
+};
+
+
+export const THEMES = {
+  coffee: coffeeTheme,
+  forest: forestTheme,
+  purple: purpleTheme,
+  ocean: oceanTheme,
+  sunset: sunsetTheme,
+  mint: mintTheme,
+  midnight: midnightTheme,
+  roseGold: roseGoldTheme,
+};
+
 
 export const COLORS = THEMES.purple;
