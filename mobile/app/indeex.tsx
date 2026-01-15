@@ -24,3 +24,7 @@ const HomeScreen = () => {
 const loadData = async () => {
     try {
       setLoading(true);
+
+       const [apiCategories, randomMeals, featuredMeal] = await Promise.all([
+       
+      ]);
